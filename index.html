@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo média</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icone.png" type="image/x-icon">
+</head>
+<body>
+
+    <main>
+
+        <div id="form">
+
+            <form action="">
+                <h1>Cálculo das Médias Finais</h1>
+                <div id="inputs">
+                    <span>
+                        <label for="campo01">Nota 01:</label><br>
+                        <input type="number" name="campo03" value="" id="campo01" required>
+                    </span>
+                    
+                    <span>
+                        <label for="campo02">Nota 02:</label><br>
+                        <input type="number" name="campo02" value="" id="input02" required>
+                    </span>
+
+                    <span>
+                        <label for="campo03">Nota 03:</label><br>
+                        <input type="number" name="campo03" value="" id="input03" required>
+                    </span>
+                </div>
+
+                <div id="resultado-media">
+                    <p id="result">Média: 0.00</p>
+                    <p id="info"> ⚫️ Status  ⚫️ </p>
+                </div>
+
+            </form>
+
+            <div>
+                
+                <button id="btn-calcular" onclick="calcular()">CALCULAR</button>
+                
+            </div>
+
+        </div>
+    
+
+        <section id="glossario">
+            <span>🟢 Aprovado</span>
+            <span>🟡 Recuperação</span>
+            <span>🔴 Reprovado</span>
+        </section>
+    </main>
+    
+
+
+    <script src="calc/script.js"></script>
+</body>
+</html>
